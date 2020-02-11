@@ -32,19 +32,19 @@ class BMIFormulaCalculation {
     
     if (_bmi < 18.5) {
       _resultColor = Color(0xFFC55956);
-      _result = 'Underweight';
+      _result = 'underweight';
       _interpretation = 'You are lower than normal body weight, You can eat a bit more.';
     } else if (_bmi >= 18.5 && _bmi < 25) {
       _resultColor = Color(0xFF00BD01);
-      _result = 'Normal';
+      _result = 'normal';
       _interpretation = 'You have a normal body weight. Good job!';
     } else if (_bmi >= 25 && _bmi <= 30) {
       _resultColor = Color(0xFFFFFF66);
-      _result = 'Overweight';
+      _result = 'overweight';
       _interpretation = 'You are heigher than normal body weight, Try to exercise more.';
     } else if (_bmi > 30) {
       _resultColor = Color(0xFFFE9900);
-      _result = 'Obesity';
+      _result = 'obesity';
       _interpretation = 'You are too heigher body weight, You should visit a doctor.';
     }
   }

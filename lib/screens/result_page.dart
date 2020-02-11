@@ -45,11 +45,8 @@ class ResultPage extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            Text(
-                              resultText.toUpperCase(),
-                              style: kLabelTextStyle.copyWith(
-                                  color: resultColor,
-                                  fontWeight: FontWeight.w500),
+                            Image(
+                              image: AssetImage('images/$resultText.png'),
                             ),
                             SizedBox(
                               height: 10.0,
@@ -61,13 +58,10 @@ class ResultPage extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              'Normal BMI Range :',
+                              resultText.toUpperCase(),
                               style: kLabelTextStyle.copyWith(
-                                  color: Colors.grey, fontSize: 20.0),
-                            ),
-                            Text(
-                              '18.5 - 25 kg/m2',
-                              style: TextStyle(fontSize: 20.0),
+                                  color: resultColor,
+                                  fontWeight: FontWeight.w500),
                             ),
                             SizedBox(
                               height: 25.0,
